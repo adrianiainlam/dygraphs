@@ -590,7 +590,7 @@ DygraphInteraction.endTouch = function(event, g, context) {
       if (context.lastTouch !== null){
         // no double-tap, pan or pinch so it's a touchOVER
         event.isTouchOver = true;
-        g.mouseMove(event);
+        g.mouseMove_(event);
       }
 
       context.startTimeForDoubleTapMs = now;
